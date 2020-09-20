@@ -1,0 +1,41 @@
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import Button from '@material-ui/core/Button'
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
+}));
+
+export default function DenseAppBar() {
+  const classes = useStyles();
+
+  return (
+    <div className={classes.root}>
+      <AppBar position="static" color="transparent">
+        <Toolbar style={{justifyContent:"space-evenly"}}>
+            <Typography variant="h4" color="inherit" style={{display:"inline"}}>
+            <Button>
+                Work
+            </Button>
+          </Typography>
+          <Typography variant="h3" color="inherit" style={{display:"inline"}}>
+            LAUREN GARELICK
+          </Typography>
+          <Typography variant="h4" color="inherit" style={{display: "inline"}}>
+            <Button>About</Button>
+          </Typography>
+        </Toolbar>
+      </AppBar>
+    </div>
+  );
+}
