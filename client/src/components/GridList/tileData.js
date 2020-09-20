@@ -8,7 +8,4 @@ const tileData = [
         author: 'Lauren Garelick',
         featured: true,
     },
-    {
-        [etc...]
-   },
   ];
