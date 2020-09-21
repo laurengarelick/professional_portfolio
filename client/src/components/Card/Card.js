@@ -1,72 +1,51 @@
-// import React from 'react';
-// import cx from 'clsx';
-// import { makeStyles } from '@material-ui/core/styles';
-// import Box from '@material-ui/core/Box';
-// import Card from '@material-ui/core/Card';
-// import CardActionArea from '@material-ui/core/CardActionArea';
-// import CardMedia from '@material-ui/core/CardMedia';
-// import CardContent from '@material-ui/core/CardContent';
-// import Typography from '@material-ui/core/Typography';
-// import { useCoverCardMediaStyles } from '@mui-treasury/styles/cardMedia/cover';
-// import { useLightTopShadowStyles } from '@mui-treasury/styles/shadow/lightTop';
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 
-// const useStyles = makeStyles(() => ({
-//   root: {
-//     maxWidth: 304,
-//     margin: 'auto',
-//     borderRadius: 0,
-//     position: 'relative',
-//   },
-//   content: {
-//     padding: 24,
-//   },
-//   cta: {
-//     display: 'block',
-//     textAlign: 'center',
-//     color: '#fff',
-//     letterSpacing: '3px',
-//     fontWeight: 200,
-//     fontSize: 12,
-//   },
-//   title: {
-//     color: '#fff',
-//     letterSpacing: '2px',
-//   },
-// }));
+const useStyles = makeStyles({
+  root: {
+    maxWidth: 345,
+  },
+  media: {
+    height: 140,
+  },
+});
 
-// export const NewsCard2Demo = React.memo(function NewsCard2() {
-//   const styles = useStyles();
-//   const mediaStyles = useCoverCardMediaStyles();
-//   const shadowStyles = useLightTopShadowStyles();
-//   return (
-//     <Card className={cx(styles.root, shadowStyles.root)}>
-//       <CardMedia
-//         classes={mediaStyles}
-//         image={
-//           'https://images.unsplash.com/photo-1519810755548-39cd217da494?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80'
-//         }
-//       />
-//       <CardActionArea>
-//         <CardContent className={styles.content}>
-//           <Box
-//             display={'flex'}
-//             flexDirection={'column'}
-//             alignItems={'center'}
-//             justifyContent={'center'}
-//             minHeight={360}
-//             color={'common.white'}
-//             textAlign={'center'}
-//           >
-//             <h1 className={styles.title}>Bartend</h1>
-//             <p>Master cocktail crafter</p>
-//           </Box>
-//           <Typography className={styles.cta} variant={'overline'}>
-//             Explore
-//           </Typography>
-//         </CardContent>
-//       </CardActionArea>
-//     </Card>
-//   );
-// });
+export default function MediaCard() {
+  const classes = useStyles();
 
-// export default NewsCard2Demo
+  return (
+    <Card className={classes.root}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image="/static/images/cards/contemplative-reptile.jpg"
+          title="Contemplative Reptile"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Lizard
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+            across all continents except Antarctica
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button size="small" color="primary">
+          Share
+        </Button>
+        <Button size="small" color="primary">
+          Learn More
+        </Button>
+      </CardActions>
+    </Card>
+  );
+}

@@ -5,7 +5,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import Button from '@material-ui/core/Button'
+import Button from '@material-ui/core/Button';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -32,7 +33,7 @@ export default function DenseAppBar() {
             LAUREN GARELICK
           </Typography>
           <Typography variant="h4" color="inherit" style={{display: "inline"}}>
-            <Button>About</Button>
+            <AnchorLink href="#gridsContainer"><Button>About</Button></AnchorLink>
           </Typography>
         </Toolbar>
       </AppBar>
