@@ -14,7 +14,6 @@ function App() {
       <div className="banner" style={{background:"#424242", height: "50vh"}}>
         <h1 style={{textAlign:"center", color:"white"}}>Hi, I’m a MOM, MERN coding apprentice, and adventure enthusiast living in Orange County, CA.</h1>
       </div>
-      {/* <CenteredGrid/> */}
      <GridList/>
     </div>
   );
