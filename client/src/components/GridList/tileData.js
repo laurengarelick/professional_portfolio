@@ -8,27 +8,27 @@ import image5 from '../../assets/images/headshot.jpeg';
 const tileData = [
     {
       img: image1,
-      title: "Baby and Me",
+      title: "",
       featured: false
     },
     {
      img: image2,
-     title: "Baby and Me",
+     title: "",
      featured: false
    },
    {
      img: image3,
-     title: "Baby and Me",
+     title: "",
      featured: true
    },
    {
      img: image4,
-     title: "Baby and Me",
+     title: "",
      featured: false
    },
    {
      img: image5,
-     title: "Baby and Me",
+     title: "",
      featured: false
    },
   ]

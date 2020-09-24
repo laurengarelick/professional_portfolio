@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Nav/>
       <div className="banner" style={{background:"#424242", height: "50vh"}}>
-        <h1 style={{textAlign:"center", color:"white"}}>Hi, I’m a MOM, MERN coding apprentice, and adventure enthusiast living in Orange County, CA.</h1>
+        <h1 style={{textAlign:"center", color:"white", fontSize:"32px"}}>Hi, I’m a MOM, MERN coding apprentice, and adventure enthusiast living in Orange County, CA.</h1>
       </div>
      <GridList/>
     </div>
