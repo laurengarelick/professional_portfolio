@@ -3,7 +3,7 @@ import image2 from '../../assets/images/bartend1.jpeg';
 import image3 from '../../assets/images/sunflower.jpeg';
 import image4 from '../../assets/images/workout.jpeg';
 import image5 from '../../assets/images/headshot.jpeg';
-
+import image6 from '../../assets/images/storefront.png';
 
 const tileData = [
     {
@@ -31,6 +31,11 @@ const tileData = [
      title: "",
      featured: false
    },
+   {
+    img: image6,
+    title: "",
+    featured: true
+  },
   ]
 
 export default tileData
