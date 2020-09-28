@@ -44,3 +44,9 @@
 .banner {
   transition: all 1s ease-in-out;
 }
+
+.h1 {
+  font-family: 'Epilogue', sans-serif;
+  text-align: center;
+
+}
