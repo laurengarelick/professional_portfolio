@@ -31,12 +31,13 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 50,
     background:"black",
     opacity: 0,
-    textAlign: "center",
-    justifyContent: "center"
+  
   },
   tileHoverText: {
     color: "whitesmoke",
-    position: "relative",
+    textDecoration: 32,
+    position: "absolute",
+    padding: 100,
     zIndex: 50,
 
   },
@@ -82,17 +83,6 @@ export default function AdvancedGridList() {
             <div className={classes.tileOverlay}>
               <h2 className={classes.tileHoverText}>TEST FILLER TEXT</h2>
             </div>
-            <GridListTileBar
-              title={tile.title}
-              titlePosition="top"
-              actionIcon={
-                <IconButton aria-label={`star ${tile.title}`} className={classes.icon}>
-                  <StarBorderIcon />
-                </IconButton>
-              }
-              actionPosition="left"
-              className={classes.titleBar}
-            />
           </GridListTile>
         ))}
       </GridList>
