@@ -22,9 +22,9 @@ export default function DenseAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" color="transparent">
+      <AppBar position="static" color="white">
         <Toolbar style={{justifyContent:"space-evenly"}}>
-            <Typography variant="h4" color="inherit" style={{display:"inline"}}>
+            <Typography  color="inherit" style={{display:"inline"}}>
             <Button>
                 Work
             </Button>
