@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
@@ -7,6 +7,7 @@ import IconButton from '@material-ui/core/IconButton';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 import tileData from './tileData'
 import "./GridList.css"
+import Typed from 'typed.js';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,7 +36,6 @@ const useStyles = makeStyles((theme) => ({
   },
   tileHoverText: {
     color: "whitesmoke",
-    textDecoration: 32,
     position: "absolute",
     padding: 100,
     zIndex: 50,
@@ -64,24 +64,49 @@ const useStyles = makeStyles((theme) => ({
  *   },
  * ];
  */
+const hoverText = [
+  ["Hello I'm Lauren", 'I did my eyelashes today', "I look fly AF."],
+  ["this is", "my second", "grid item"],
+  ["yay", "disneyland!"],
+  ["hellokitty", "hellokitty"]
+]
 
 
 export default function AdvancedGridList() {
   const classes = useStyles();
+  const [hover, setHover] = useState(null);
 
   useEffect(()=> {
 
     document.getElementById("gridsContainer").scrollIntoView({behavior: "smooth"})
-  }, [])
+  }, []);
+
+
+  useEffect(()=> {
+    if(hover != null){
+       const options = {
+      strings: hoverText[hover] || ['placeholder', "text"],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop:true,
+      backDelay: 800,
+    };
+    const typed = new Typed(`#grid${hover}`, options);
+    }
+  },[hover])
+    
 
   return (
     <div className={classes.root} id="gridsContainer">
       <GridList cellHeight={200} spacing={1} className={classes.gridList}>
-        {tileData.map((tile) => (
+        {tileData.map((tile,i) => (
           <GridListTile key={tile.img} cols={tile.featured ? 2 : 1} rows={3}>
             <img src={tile.img} alt={tile.title} />
-            <div className={classes.tileOverlay}>
-              <h2 className={classes.tileHoverText}>TEST FILLER TEXT</h2>
+            <div className={classes.tileOverlay} onMouseEnter={()=> {
+              console.log("hovering, ", i)
+              setHover(i)}}>
+              <h2 className={classes.tileHoverText} id={`grid${i}`}></h2>
+
             </div>
           </GridListTile>
         ))}
