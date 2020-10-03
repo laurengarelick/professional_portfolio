@@ -36,10 +36,10 @@
     transform: rotate(360deg);
   }
 }
-
+/* 
 .banner:hover {
   background: black!important;
-}
+} */
 
 .banner {
   transition: all 1s ease-in-out;

@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Nav/>
-      <div className="banner" style={{background:"#424242", height: "50vh"}}>
+      <div className="banner" style={{background:"#black", height: "50vh"}}>
         <h1 style={{textAlign:"center", padding: 100, color:"white", fontFamily:"epilogue,sans-serif", fontSize:"56px"}}>-Hi, I’m a MOM, MERN coding apprentice, and
          adventure enthusiast living in Orange County, CA.</h1>
       </div>
