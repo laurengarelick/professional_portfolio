@@ -65,10 +65,11 @@ const useStyles = makeStyles((theme) => ({
  * ];
  */
 const hoverText = [
-  ["Hello I'm Lauren", 'I did my eyelashes today', "I look fly AF."],
-  ["this is", "my second", "grid item"],
-  ["yay", "disneyland!"],
-  ["hellokitty", "hellokitty"]
+  ["mommimg isn't easy", "it's a pretty good job though", "possibly my favorite one so far"],
+  ["craft bartender", "10+ years experience"],
+  ["", "disneyland!"],
+  ["personal trainer", "former tumbling & cheer coach", "7 years experience"],
+  ["first full stack application", "utilized MERN stack"]
 ]
 
 

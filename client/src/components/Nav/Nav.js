@@ -29,7 +29,7 @@ export default function DenseAppBar() {
                 Work
             </Button>
           </Typography>
-          <Typography variant="h3" color="inherit" style={{display:"inline"}}>
+          <Typography variant="h5" color="inherit" style={{display:"inline"}}>
             LAUREN GARELICK
           </Typography>
           <Typography variant="h4" color="inherit" style={{display: "inline"}}>
