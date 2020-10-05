@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Nav from "./components/Nav/Nav.js";
 import GridList from "./components/GridList/GridList.js"
-
+import Projects from "./components/Projects/Projects.js"
 
 
 
@@ -16,6 +16,7 @@ function App() {
          adventure enthusiast living in Orange County, CA.</h1>
       </div>
      <GridList/>
+     <Projects/>
     </div>
   );
 }
