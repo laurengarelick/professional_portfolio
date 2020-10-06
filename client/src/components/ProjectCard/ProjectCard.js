@@ -22,7 +22,7 @@ export default function MediaCard() {
     const classes = useStyles();
 
     return (
-        <Tilt transitionSpeed={1500} tiltMaxAngleX={5} tiltMaxAngleY={5} scale={1.2}>
+        <Tilt transitionSpeed={1500} tiltMaxAngleX={5} tiltMaxAngleY={5} scale={1.1}>
 
             <Card className={classes.root}>
                 <CardActionArea>
