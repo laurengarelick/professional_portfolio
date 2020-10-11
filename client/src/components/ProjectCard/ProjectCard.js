@@ -29,15 +29,14 @@ export default function MediaCard() {
                     <CardMedia
                         className={classes.media}
                         image="https://hips.hearstapps.com/hmg-prod/images/delish-carbonara-1541534998.jpg"
-                        title="Contemplative Reptile"
+                        title="Project #i"
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
                             Work Experience
           </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                            across all continents except Antarctica
+                            Doing this project helped
           </Typography>
                     </CardContent>
                 </CardActionArea>
