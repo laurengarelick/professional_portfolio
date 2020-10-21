@@ -43,7 +43,7 @@ export default function DenseAppBar() {
             </Button>
             </AnchorLink>
           </Typography>
-          <Typography variant="h3" color="inherit" style={{ display: "inline" }}>
+          <Typography variant="h4" color="inherit" style={{ display: "inline" }}>
             <LightTooltip title="Check out my Resume">
               <a style={{ textDecoration: "none" }} href={pdf} target="_blank">
                 <Button>
